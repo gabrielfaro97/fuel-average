@@ -13,7 +13,7 @@ export default TabNavigator(
     Home: {
       screen: HomeScreen,
     },
-    Averages: {
+    Resume: {
       screen: ResumeScreen,
     }    
   },
@@ -29,7 +29,7 @@ export default TabNavigator(
                 ? `ios-home${focused ? '' : '-outline'}`
                 : 'md-home';
             break;
-          case 'Averages':
+          case 'Resume':
             iconName = Platform.OS === 'ios' ? `ios-calculator${focused ? '' : '-outline'}` : 'md-calculator';
             break;          
         }
