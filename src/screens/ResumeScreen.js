@@ -20,6 +20,8 @@ export default class LinksScreen extends React.Component {
     tableData: null
   };
 
+  //['01/01/18','R$32,45','28,92 km/l','8,31 litros' ]
+
   render() {
     return (
       <View style={ this.state.tableData ? styles.fullTable : styles.emptyTable }>
@@ -40,7 +42,7 @@ export default class LinksScreen extends React.Component {
             </ScrollView>
           : <View>
               <Text>Não há registros</Text>
-            </View>}
+            </View>}          
       </View>
     );
   }
